@@ -43,9 +43,9 @@ for url, filename in url_file_mapping.items():
     # DataFrame im Terminal anzeigen
     print(df)
     
-    # CSV-Datei auf dem Desktop speichern
-    desktop = os.path.join(os.path.expanduser("~"), 'Desktop')
-    csv_datei = os.path.join(desktop, f'{filename}.csv')  # Speichern unter Dateinamen
+    # Pfad zum Speichern der CSV-Datei angeben
+    path = 'X:/XXX/XXX'
+    csv_datei = os.path.join(path, f'{filename}.csv')  # Speichern unter Dateinamen
         
     # DataFrame als CSV speichern, Encoding latin-1 für deutsche Spezialzeichen 
     df.to_csv(csv_datei, index=False, encoding='latin-1')
